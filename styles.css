@@ -1,27 +1,27 @@
- .container {
+.container {
     margin: 0 auto;
     padding: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 16px;
- }
+}
 
- .action-btn{
+.action-btn {
     border: none;
     padding: 16px 10px;
     border-radius: 20px;
     cursor: pointer;
- }
+}
 
- .action-btn-hover{
-    background: rgb(200,200, 200);
- }
+.action-btn:hover {
+    background: rgb(200, 200, 200);
+}
 
- #content {
-    width: 500px;
+#content {
+    width: 500;
     margin: 0 auto;
     background: rgb(238, 236, 236);
     border-radius: 20px;
     padding: 16px;
- }
+}
