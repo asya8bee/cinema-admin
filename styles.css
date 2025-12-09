@@ -7,14 +7,14 @@
     gap: 16px;
  }
 
- .action-bth{
+ .action-btn{
     border: none;
     padding: 16px 10px;
     border-radius: 20px;
     cursor: pointer;
  }
 
- .action-bth-hover{
+ .action-btn-hover{
     background: rgb(200,200, 200);
  }
 
