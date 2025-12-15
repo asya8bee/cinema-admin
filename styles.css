@@ -26,3 +26,29 @@
   border-radius: 20px;
   padding: 16px;
 }
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul li {
+  padding: 8px;
+  margin: 5px 0;
+  background-color: #f7f7f7;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+ul li:nth-child(even) {
+  background-color: #e9e9e9;
+}
+
+.message {
+  padding: 15px;
+  background-color: #ffcccc;
+  color: #d8000c;
+  border-radius: 8px;
+  margin-top: 20px;
+  text-align: center;
+}
