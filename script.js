@@ -75,8 +75,30 @@ const searchFilm = () => {
   });
 };
 
+const markFilm = () => {
+  clearContent();
+  const selectFilm = document.createElement('select');
+  movies.forEach((movie, index) => {
+    const option = document.createElement('option');
+    option.value = index;
+    option.textContent = movie.title;
+    selectFilm.append(option);
+  });
 
+  const markBtn = document.createElement('button');
+  markBtn.textContent = 'Выдать фильм';
+  contentBlock.append(selectFilm, markBtn);
 
+  markBtn.addEventListener('click', () => {
+    const selectedFilmIndex = selectFilm.value;
+    if (movies[selectedFilmIndex] && movies[selectedFilmIndex].isAvailable) {
+      movies[selectedFilmIndex].isAvailable = false;
+      showFilms();
+    }
+  });
+};
 
-
-showFilmsBtn.addEventListener('click',showFilms)
+showFilmsBtn.addEventListener('click', showFilms);
+addFilmBtn.addEventListener('click', addFilm);
+findFilmBtn.addEventListener('click', searchFilm);
+markFilmBtn.addEventListener('click', markFilm);
